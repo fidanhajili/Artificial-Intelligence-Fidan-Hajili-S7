@@ -48,28 +48,56 @@ header {
 .about .about-left img {
     width: 300px;
 }
-
-.cards {
+.swipercards {
     background-color: var(--fon);
 }
-
-.cards .card-image {
-    width: 73px;
-    display: flex;
-    justify-content: center !important;
+.cardsswipper .swiper-slide img {
+    width: 98px;
 }
-
-.cards .card {
-    background-color: var(--cards);
+.cardsswipper .swiper-slide {
+    color: #fff;
+    opacity: 70%;
 }
+.cardsswipper h1 {
+    font-size: 30px;
+}
+.cardslide {
+    background-color: var(--fon);
+    opacity: 50%;
+    border: 3px solid var(--signin);
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+
+
+
 
 .clients {
     background-color: var(--fon);
 }
 
 .clients .clients-right img {
+    
     width: 300px;
 }
+
 
 .footer {
     background-color: var(--fon);
@@ -155,10 +183,11 @@ header {
 
 .watch-video-modal {
     position: fixed;
-    background-color: #222;
+    background-color: #fff !important;
     width: 100%;
-    height: 100vh;
-    z-index: 9999999;
+    height: 130vh;
+    top: -20px;
+    z-index: 999999; 
     overflow-x: hidden;
     transform: scale(0);
     transition: all 1.1s linear;
