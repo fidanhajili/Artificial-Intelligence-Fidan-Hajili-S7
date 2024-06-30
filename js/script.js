@@ -47,7 +47,7 @@ const swiper = new Swiper(".shirketlers", {
 
   const bloglarinYerlesheceyiYer = document.querySelector(".bloglargelecekyer")
 
-  for(let i=0; i<10; i++) {
+  for(let i=0; i<5; i++) {
       bloglarinYerlesheceyiYer.innerHTML += `<div class="blog">
     <span>16April</span>
     <h4>Design tips for designer, that cover everything you need</h4>
