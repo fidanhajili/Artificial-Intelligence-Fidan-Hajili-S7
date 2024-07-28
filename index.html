@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
   <!-- swiper cdn css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/global.css">
@@ -22,11 +24,11 @@
   <div class="mobile-menu">
     <i class="fa-solid fa-xmark"></i>
     <nav class="mobile-links">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Services</a>
-      <a href="">Blog</a>
-      <a href="">Contact</a>
+      <a style="animation-delay: 0.4s">Home</a>
+      <a style="animation-delay: 0.5s">About</a>
+      <a style="animation-delay: 0.6s">Services</a>
+      <a style="animation-delay: 0.7s">Blog</a>
+      <a style="animation-delay: 0.8s">Contact</a>
     </nav>
   </div>
   <header>
@@ -34,8 +36,8 @@
     <nav class="navbar navbar-expand-lg d-flex">
       <div class="container">
 
-        <a class="navbar-brand" href="#"><img src="./assets/images/header/logo.svg" class="ps-5 ms-3" alt=""
-            style="width: 200px;"></a>
+        <a class="navbar-brand animate__animated animate__bounce" href="#"><img src="./assets/images/header/logo.svg"
+            class="ps-5 ms-3" alt="" style="width: 200px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -71,7 +73,7 @@
   <!-- header end -->
   <!-- introduction start -->
   <div class="watch-video-modal">
-    <i class="fa-regular fa-circle-xmark"></i>
+    <i class="fa-regular fa-circle-xmark videoclose"></i>
     <div class="modal-body">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/EkshFcLESPU?si=Q7rAz3L87pdzeskO"
         title="YouTube video player" frameborder="0"
@@ -90,7 +92,8 @@
       <div class="d-flex row me-4">
         <div class="intro-left-side py-5 col-lg-6 col-md-6 col-12">
           <h6>Next generation platform</h6>
-          <h1 class="text-white pt-2">Artificial intelligence <br>& Syber security</h1>
+          <h1 class="text-white pt-2 animate__animated animate__pulse animate__infinite">Artificial intelligence <br>&
+            Syber security</h1>
           <p class="text-white py-4">Lorem ipsum is placeholder text commonly used in the graphic, print, and
             publishing industries for previewing layouts and visual mockups.</p>
 
@@ -101,8 +104,8 @@
           </div>
         </div>
 
-        <div class="intro-right-side col-lg-6  col-md-6 col-12 "><img src="./assets/images/introduction/intro1.svg"
-            alt="" class="w-100"></div>
+        <div class="intro-right-side col-lg-6  col-md-6 col-12 animate__animate animate__bounceInRight "><img
+            src="./assets/images/introduction/intro1.svg" alt="" class="w-100"></div>
 
       </div>
 
@@ -180,6 +183,86 @@
     </div>
 
 
+  </section>
+  <!-- fqa -->
+  <section class="faq">
+    <h5 class="text-center py-5">FAQ</h5>
+    <h1 class="text-center pb-5 text-white">Frequently Asked Questions</h1>
+    <div class="container">
+      <div class="row d-flex">
+        <div class="accordion-container accordion-left col-6">
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container accordion-right col-6">
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div class="ac">
+            <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- films -->
+  <section class="films">
+    <h1
+      class="text-center text-white py-5 text-uppercase animate__animated animate__zoomInLeft animate__infinite animate__slower">
+      Films</h1>
+    <div class="container">
+      <div class="row" id="filmler-divi">
+
+      </div>
+    </div>
+    </div>
   </section>
 
 
@@ -336,7 +419,8 @@
 
   </footer>
   <!-- footer end -->
-
+  <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>

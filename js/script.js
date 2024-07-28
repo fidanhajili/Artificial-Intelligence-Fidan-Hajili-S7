@@ -73,4 +73,40 @@ const slide = new Swiper(".cardsswipper", {
       el: ".swiper-pagination",
     },
   })
+
+  new Accordion('.accordion-left');
+  new Accordion('.accordion-right');
    
+
+  //  1732613dfee39517c51bc4fbbdf6e53f
+// https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY
+
+  window.addEventListener("DOMContentLoaded", getFilmleriGetir)
+  async function getFilmleriGetir() {
+const url = "https://api.themoviedb.org/3/movie/popular?api_key=1732613dfee39517c51bc4fbbdf6e53f"
+const filmlerDivi = document.querySelector("#filmler-divi")
+
+try {
+ const cavab = await fetch(url)
+ const gelenFilmler = await cavab.json()
+ for(let i=0; i<gelenFilmler.results.length; i++) {
+  filmlerDivi.innerHTML += `   <div class="col-12 col-md-6 col-lg-3">
+        <div class="card my-4 mx-2 p-4"
+          <div class="card-body">
+            <h5 class="card-title">${gelenFilmler.results[i].title}</h5>
+            <small> ${gelenFilmler.results[i].original_language} </small>
+            <p class="card-text my-4">${gelenFilmler.results[i].overview.slice(0,80)}...</p>
+            <a href="#" class="btn btn-primary">Link</a>
+          </div>
+        </div>`
+ }
+
+}
+
+
+catch(err) {
+
+}
+  }
+
+
